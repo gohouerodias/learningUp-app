@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-4 mb-4">
                 <h5 class="fw-bold mb-3">LearnHub</h5>
-                <p>Notre mission est de rendre l'éducation de qualité accessible à tous, partout dans le monde.</p>
+                <p>Наша миссия - сделать качественное образование доступным для всех и везде.</p>
                 <div class="d-flex mt-4">
                     <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
                     <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
@@ -16,22 +16,22 @@
             <div class="col-lg-2 col-md-4 mb-4">
                 <h5 class="fw-bold mb-3">LearnHub</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">À propos</a></li>
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Carrières</a></li>
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Catalogue</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">О нас</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Карьера</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Блог</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Каталог</a></li>
                 </ul>
             </div>
             
            
             
             <div class="col-lg-2 col-md-4 mb-4">
-                <h5 class="fw-bold mb-3">Support</h5>
+                <h5 class="fw-bold mb-3">Поддержка</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact</a></li>
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Conditions</a></li>
-                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Politique de confidentialité</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Контакты</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Часто задаваемые вопросы</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Условия</a></li>
+                    <li class="mb-2"><a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a></li>
                 </ul>
             </div>
             
@@ -42,7 +42,7 @@
         
         <div class="row align-items-center">
             <div class="col-md-6">
-                <p class="mb-0">&copy; {{ date('Y') }} LearnHub. Tous droits réservés.</p>
+                <p class="mb-0">&copy; {{ date('Y') }} LearnHub. Все права защищены.</p>
             </div>
            
         </div>
@@ -89,5 +89,20 @@ if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessag
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+
+   //JS pour анимацию прогресс баров 
+    document.addEventListener("DOMContentLoaded", function() {
+        const bars = document.querySelectorAll(".progress-bar");
+        bars.forEach(bar => {
+            const points = bar.dataset.points;
+            const max = bar.dataset.max;
+            const percent = Math.round((points / max) * 100);
+
+            setTimeout(() => {
+                bar.style.width = percent + "%";
+            }, 300); // анимация после 0.3с
+        });
     });
 </script>
