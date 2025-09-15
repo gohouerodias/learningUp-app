@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Tableau de bord - LearnHub')
+@section('title', 'Панель управления - LearnHub')
 
 @section('content')
 <!-- Page Header -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Tableau de bord</h1>
+    <h1 class="h3 mb-0 text-gray-800">Панель управления</h1>
     <a href="{{ route('courses.index') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-        <i class="bi bi-search me-1"></i> Trouver un cours
+        <i class="bi bi-search me-1"></i> Найти курс
     </a>
 </div>
 
@@ -20,7 +20,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Progression globale
+                            Общий прогресс
                         </div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">68%</div>
                     </div>
@@ -44,7 +44,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                            Cours suivis
+                            Пройденные курсы
                         </div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">8</div>
                     </div>
@@ -63,7 +63,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                            Heures d'apprentissage
+                            Часы обучения
                         </div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">42h</div>
                     </div>
@@ -82,7 +82,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                            Certificats obtenus
+                            Полученные сертификаты
                         </div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">3</div>
                     </div>
@@ -101,8 +101,8 @@
     <div class="col-lg-8 mb-4">
         <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Continuer votre apprentissage</h6>
-                <a href="{{ route('my-courses') }}" class="btn btn-sm btn-outline-primary">Voir tout</a>
+                <h6 class="m-0 font-weight-bold text-primary">Продолжить обучение</h6>
+                <a href="{{ route('my-courses') }}" class="btn btn-sm btn-outline-primary">Посмотреть все</a>
             </div>
             <div class="card-body">
                 @for($i = 1; $i <= 3; $i++)
@@ -113,16 +113,16 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">Laravel pour les débutants</h5>
-                                <p class="card-text">Apprenez à créer des applications web modernes avec Laravel.</p>
+                                <h5 class="card-title">Laravel для начинающих</h5>
+                                <p class="card-text">Научитесь создавать современные веб-приложения с помощью Laravel.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="w-75 me-3">
                                         <div class="progress" style="height: 8px;">
                                             <div class="progress-bar" role="progressbar" style="width: {{ rand(30, 90) }}%;" aria-valuenow="{{ rand(30, 90) }}" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
-                                        <small class="text-muted">{{ rand(30, 90) }}% complété</small>
+                                        <small class="text-muted">{{ rand(30, 90) }}% пройдено</small>
                                     </div>
-                                    <a href="#" class="btn btn-sm btn-outline-primary">Continuer</a>
+                                    <a href="#" class="btn btn-sm btn-outline-primary">Продолжить</a>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
         <!-- Recent Activity -->
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Activité récente</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Недавняя активность</h6>
             </div>
             <div class="card-body">
                 <div class="timeline">
@@ -145,9 +145,9 @@
                             <i class="bi bi-play-circle"></i>
                         </div>
                         <div class="timeline-content">
-                            <h6 class="mb-1">Vous avez terminé une leçon</h6>
-                            <p class="text-muted mb-0">"Introduction à Laravel" dans le cours "Laravel pour les débutants"</p>
-                            <small class="text-muted">Il y a {{ $i * 2 }} heures</small>
+                            <h6 class="mb-1">Вы завершили урок</h6>
+                            <p class="text-muted mb-0">"Введение в Laravel" в курсе "Laravel для начинающих"</p>
+                            <small class="text-muted">{{ $i * 2 }} часа назад</small>
                         </div>
                     </div>
                     @endfor
@@ -161,7 +161,7 @@
         <!-- Upcoming Events -->
         <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Événements à venir</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Предстоящие события</h6>
             </div>
             <div class="card-body">
                 <div class="mb-3">
@@ -170,11 +170,11 @@
                             <i class="bi bi-calendar-event"></i>
                         </div>
                         <div>
-                            <h6 class="mb-0">Live Q&A Laravel</h6>
-                            <small class="text-muted">Demain, 18:00</small>
+                            <h6 class="mb-0">Live Q&A по Laravel</h6>
+                            <small class="text-muted">Завтра, 18:00</small>
                         </div>
                     </div>
-                    <button class="btn btn-sm btn-outline-primary w-100">Rejoindre</button>
+                    <button class="btn btn-sm btn-outline-primary w-100">Присоединиться</button>
                 </div>
                 
                 <div class="mb-3">
@@ -183,11 +183,11 @@
                             <i class="bi bi-calendar-event"></i>
                         </div>
                         <div>
-                            <h6 class="mb-0">Atelier API REST</h6>
-                            <small class="text-muted">15 Oct, 14:00</small>
+                            <h6 class="mb-0">Мастер-класс по REST API</h6>
+                            <small class="text-muted">15 окт, 14:00</small>
                         </div>
                     </div>
-                    <button class="btn btn-sm btn-outline-success w-100">Planifier</button>
+                    <button class="btn btn-sm btn-outline-success w-100">Запланировать</button>
                 </div>
                 
                 <div>
@@ -196,11 +196,11 @@
                             <i class="bi bi-calendar-event"></i>
                         </div>
                         <div>
-                            <h6 class="mb-0">Examen Final PHP</h6>
-                            <small class="text-muted">20 Oct, 10:00</small>
+                            <h6 class="mb-0">Итоговый экзамен по PHP</h6>
+                            <small class="text-muted">20 окт, 10:00</small>
                         </div>
                     </div>
-                    <button class="btn btn-sm btn-outline-info w-100">Planifier</button>
+                    <button class="btn btn-sm btn-outline-info w-100">Запланировать</button>
                 </div>
             </div>
         </div>
@@ -208,15 +208,15 @@
         <!-- Recommended Courses -->
         <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Recommandé pour vous</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Рекомендовано для вас</h6>
             </div>
             <div class="card-body">
                 @for($i = 1; $i <= 3; $i++)
                 <div class="d-flex mb-3">
                     <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="rounded me-3" width="60" height="60" alt="Course">
                     <div>
-                        <h6 class="mb-0">Développement Web Avancé</h6>
-                        <small class="text-muted">Par Jane Smith</small>
+                        <h6 class="mb-0">Продвинутая веб-разработка</h6>
+                        <small class="text-muted">От Jane Smith</small>
                         <div class="text-warning small">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -228,14 +228,14 @@
                     </div>
                 </div>
                 @endfor
-                <a href="{{ route('courses.index') }}" class="btn btn-sm btn-outline-primary w-100 mt-2">Voir plus</a>
+                <a href="{{ route('courses.index') }}" class="btn btn-sm btn-outline-primary w-100 mt-2">Посмотреть еще</a>
             </div>
         </div>
 
         <!-- Achievements -->
         <div class="card shadow">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Récompenses</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Награды</h6>
             </div>
             <div class="card-body text-center">
                 <div class="row">
@@ -243,22 +243,22 @@
                         <div class="bg-warning p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <i class="bi bi-trophy text-white fs-4"></i>
                         </div>
-                        <small class="d-block mt-1">Explorateur</small>
+                        <small class="d-block mt-1">Исследователь</small>
                     </div>
                     <div class="col-4 mb-3">
                         <div class="bg-success p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <i class="bi bi-award text-white fs-4"></i>
                         </div>
-                        <small class="d-block mt-1">Étudiant</small>
+                        <small class="d-block mt-1">Студент</small>
                     </div>
                     <div class="col-4 mb-3">
                         <div class="bg-info p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
                             <i class="bi bi-lightning text-white fs-4"></i>
                         </div>
-                        <small class="d-block mt-1">Rapide</small>
+                        <small class="d-block mt-1">Быстрый</small>
                     </div>
                 </div>
-                <a href="#" class="btn btn-sm btn-outline-primary">Voir toutes les récompenses</a>
+                <a href="#" class="btn btn-sm btn-outline-primary">Посмотреть все награды</a>
             </div>
         </div>
     </div>

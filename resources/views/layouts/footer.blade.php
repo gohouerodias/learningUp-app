@@ -105,4 +105,26 @@ if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.sendMessag
             }, 300); // анимация после 0.3с
         });
     });
+
+    //JS pour animer les compteurs 
+     document.addEventListener("DOMContentLoaded", function() {
+        function animateCounter(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            let value = parseInt(el.dataset.value) || 0;
+            let count = 0;
+            const step = Math.ceil(value / 40); // vitesse
+            const interval = setInterval(() => {
+                count += step;
+                if (count >= value) {
+                    count = value;
+                    clearInterval(interval);
+                }
+                el.textContent = count;
+            }, 40);
+        }
+
+        animateCounter("coinsCounter");
+        animateCounter("certCounter");
+    });
 </script>
