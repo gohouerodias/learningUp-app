@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Laravel pour les débutants - LearnHub')
+@section('title', 'Laravel для начинающих - LearnHub')
 
-@section('description', 'Apprenez à créer des applications web modernes avec Laravel, le framework PHP le plus
-populaire.')
+@section('description', 'Научитесь создавать современные веб-приложения с помощью Laravel, самого популярного PHP-фреймворка.')
 
 @section('content')
 <!-- Course Header -->
@@ -13,17 +12,16 @@ populaire.')
             <div class="col-lg-8">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{ route('home') }}" class="text-white">Главная </a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('courses.index') }}" class="text-white">Cours</a>
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}" class="text-white">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('courses.index') }}" class="text-white">Курсы</a>
                         </li>
-                        <li class="breadcrumb-item"><a href="#" class="text-white">Développement Web</a></li>
-                        <li class="breadcrumb-item active text-white-50" aria-current="page">Laravel pour les débutants
+                        <li class="breadcrumb-item"><a href="#" class="text-white">Веб-разработка</a></li>
+                        <li class="breadcrumb-item active text-white-50" aria-current="page">Laravel для начинающих
                         </li>
                     </ol>
                 </nav>
-                <h1 class="display-5 fw-bold">Laravel pour les débutants</h1>
-                <p class="lead">Apprenez à créer des applications web modernes avec Laravel, le framework PHP le plus
-                    populaire.</p>
+                <h1 class="display-5 fw-bold">Laravel для начинающих</h1>
+                <p class="lead">Научитесь создавать современные веб-приложения с помощью Laravel, самого популярного PHP-фреймворка.</p>
                 <div class="d-flex flex-wrap align-items-center mb-3">
                     <div class="d-flex align-items-center me-4 mb-2">
                         <div class="text-warning me-2">
@@ -33,27 +31,27 @@ populaire.')
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                         </div>
-                        <span>4.5 (245 avis)</span>
+                        <span>4.5 (245 отзывов)</span>
                     </div>
                     <div class="d-flex align-items-center me-4 mb-2">
                         <i class="bi bi-people me-2"></i>
-                        <span>1,245 étudiants</span>
+                        <span>1,245 студентов</span>
                     </div>
                     <div class="d-flex align-items-center me-4 mb-2">
                         <i class="bi bi-clock me-2"></i>
-                        <span>12h de contenu</span>
+                        <span>12 часов контента</span>
                     </div>
                     <div class="d-flex align-items-center mb-2">
                         <i class="bi bi-collection-play me-2"></i>
-                        <span>56 leçons</span>
+                        <span>56 уроков</span>
                     </div>
                 </div>
                 <div class="d-flex align-items-center">
                     <img src="https://ui-avatars.com/api/?name=John+Doe&background=random" class="rounded-circle me-2"
                         width="40" height="40" alt="Instructor">
                     <div>
-                        <span>Créé par <strong>John Doe</strong></span>
-                        <div class="text-muted">Développeur Full-Stack & Instructeur</div>
+                        <span>Создано <strong>John Doe</strong></span>
+                        <div class="text-muted">Full-Stack разработчик и инструктор</div>
                     </div>
                 </div>
             </div>
@@ -70,36 +68,34 @@ populaire.')
                 <!-- Course Overview -->
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-header bg-white">
-                        <h3 class="mb-0">Aperçu du cours</h3>
+                        <h3 class="mb-0">Обзор курса</h3>
                     </div>
                     <div class="card-body">
-                        <p>Ce cours complet vous apprendra à créer des applications web modernes avec Laravel, le
-                            framework PHP le plus populaire. Vous maîtriserez les concepts fondamentaux et avancés de
-                            Laravel.</p>
+                        <p>Этот комплексный курс научит вас создавать современные веб-приложения с помощью Laravel, самого популярного PHP-фреймворка. Вы освоите фундаментальные и продвинутые концепции Laravel.</p>
 
-                        <h5 class="mt-4">Ce que vous apprendrez</h5>
+                        <h5 class="mt-4">Что вы изучите</h5>
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="list-check">
-                                    <li>Installation et configuration de Laravel</li>
-                                    <li>Architecture MVC de Laravel</li>
-                                    <li>Gestion des bases de données avec Eloquent ORM</li>
+                                    <li>Установка и настройка Laravel</li>
+                                    <li>Архитектура MVC в Laravel</li>
+                                    <li>Управление базами данных с помощью Eloquent ORM</li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-check">
-                                    <li>Création d'API RESTful</li>
-                                    <li>Système d'authentification</li>
-                                    <li>Déploiement d'applications Laravel</li>
+                                    <li>Создание RESTful API</li>
+                                    <li>Система аутентификации</li>
+                                    <li>Развертывание приложений Laravel</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <h5 class="mt-4">Prérequis</h5>
+                        <h5 class="mt-4">Требования</h5>
                         <ul>
-                            <li>Connaissances de base en PHP</li>
-                            <li>Compréhension des concepts de base de HTML et CSS</li>
-                            <li>Familiarité avec les bases de données MySQL</li>
+                            <li>Базовые знания PHP</li>
+                            <li>Понимание основ HTML и CSS</li>
+                            <li>Знакомство с базами данных MySQL</li>
                         </ul>
                     </div>
                 </div>
@@ -107,8 +103,8 @@ populaire.')
                 <!-- Course Curriculum -->
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-header bg-white">
-                        <h3 class="mb-0">Programme du cours</h3>
-                        <p class="text-muted mb-0">56 leçons • 12h de contenu</p>
+                        <h3 class="mb-0">Программа курса</h3>
+                        <p class="text-muted mb-0">56 уроков • 12 часов контента</p>
                     </div>
                     <div class="card-body p-0">
                         <div class="accordion" id="courseAccordion">
@@ -118,8 +114,8 @@ populaire.')
                                         data-bs-toggle="collapse" data-bs-target="#collapse{{ $i }}"
                                         aria-expanded="{{ $i == 1 ? 'true' : 'false' }}"
                                         aria-controls="collapse{{ $i }}">
-                                        Section {{ $i }}: Introduction à Laravel
-                                        <span class="badge bg-secondary ms-2">12 leçons • 2h 30min</span>
+                                        Раздел {{ $i }}: Введение в Laravel
+                                        <span class="badge bg-secondary ms-2">12 уроков • 2ч 30мин</span>
                                     </button>
                                 </h2>
                                 <div id="collapse{{ $i }}"
@@ -131,7 +127,7 @@ populaire.')
                                                 class="list-group-item d-flex justify-content-between align-items-center">
                                                 <div class="d-flex align-items-center">
                                                     <i class="bi bi-play-circle text-muted me-3"></i>
-                                                    <span>Leçon {{ $j }}: Introduction à Laravel</span>
+                                                    <span>Урок {{ $j }}: Введение в Laravel</span>
                                                 </div>
                                                 <span class="text-muted">15:30</span>
                                                 </li>
@@ -148,7 +144,7 @@ populaire.')
             <!-- Instructor -->
             <div class="card border-0 shadow-sm mb-4">
                 <div class="card-header bg-white">
-                    <h3 class="mb-0">Instructeur</h3>
+                    <h3 class="mb-0">Инструктор</h3>
                 </div>
                 <div class="card-body">
                     <div class="d-flex">
@@ -156,24 +152,23 @@ populaire.')
                             class="rounded-circle me-4" width="100" height="100" alt="Instructor">
                         <div>
                             <h4>John Doe</h4>
-                            <p class="text-muted">Développeur Full-Stack & Instructeur</p>
+                            <p class="text-muted">Full-Stack разработчик и инструктор</p>
                             <div class="d-flex mb-3">
                                 <div class="me-4">
                                     <i class="bi bi-star-fill text-warning"></i>
-                                    <span>4.5 Note instructor</span>
+                                    <span>4.5 Рейтинг инструктора</span>
                                 </div>
                                 <div class="me-4">
                                     <i class="bi bi-people"></i>
-                                    <span>12,545 étudiants</span>
+                                    <span>12,545 студентов</span>
                                 </div>
                                 <div>
                                     <i class="bi bi-play-circle"></i>
-                                    <span>8 cours</span>
+                                    <span>8 курсов</span>
                                 </div>
                             </div>
-                            <p>Développeur full-stack avec plus de 10 ans d'expérience, spécialisé dans les technologies
-                                web modernes. Passionné par l'enseignement et le partage de connaissances.</p>
-                            <button class="btn btn-outline-primary">Voir le profil</button>
+                            <p>Full-stack разработчик с более чем 10-летним опытом, специализирующийся на современных веб-технологиях. Увлечен преподаванием и обменом знаниями.</p>
+                            <button class="btn btn-outline-primary">Посмотреть профиль</button>
                         </div>
                     </div>
                 </div>
@@ -182,7 +177,7 @@ populaire.')
             <!-- Reviews -->
             <div class="card border-0 shadow-sm">
                 <div class="card-header bg-white">
-                    <h3 class="mb-0">Avis des étudiants</h3>
+                    <h3 class="mb-0">Отзывы студентов</h3>
                 </div>
                 <div class="card-body">
                     <div class="row mb-4">
@@ -195,7 +190,7 @@ populaire.')
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-half"></i>
                             </div>
-                            <p class="text-muted">Note moyenne</p>
+                            <p class="text-muted">Средняя оценка</p>
                         </div>
                         <div class="col-md-9">
                             @for($i = 5; $i >= 1; $i--)
@@ -217,7 +212,7 @@ populaire.')
                         </div>
                     </div>
 
-                    <h5 class="mb-4">Commentaires des étudiants</h5>
+                    <h5 class="mb-4">Комментарии студентов</h5>
 
                     @for($k = 1; $k <= 3; $k++) <div class="border-bottom pb-4 mb-4">
                         <div class="d-flex align-items-center mb-3">
@@ -233,15 +228,14 @@ populaire.')
                                     <i class="bi bi-star-fill"></i>
                                 </div>
                             </div>
-                            <small class="text-muted ms-auto">Il y a {{ rand(1, 10) }} jours</small>
+                            <small class="text-muted ms-auto">{{ rand(1, 10) }} дней назад</small>
                         </div>
-                        <p>Ce cours est exceptionnel ! J'ai appris énormément de choses et le formateur explique très
-                            bien les concepts complexes. Je recommande vivement !</p>
+                        <p>Этот курс исключительный! Я узнал очень много нового, и преподаватель очень хорошо объясняет сложные концепции. Настоятельно рекомендую!</p>
                 </div>
                 @endfor
 
                 <div class="text-center mt-4">
-                    <button class="btn btn-outline-primary">Voir plus d'avis</button>
+                    <button class="btn btn-outline-primary">Показать больше отзывов</button>
                 </div>
             </div>
         </div>
@@ -257,7 +251,7 @@ populaire.')
                         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
                             class="card-img-top rounded" alt="Course image">
                         <div class="position-absolute top-0 start-0 m-2">
-                            <span class="badge bg-danger">Promotion</span>
+                            <span class="badge bg-danger">Акция</span>
                         </div>
                     </div>
 
@@ -269,15 +263,15 @@ populaire.')
 
                     <div class="d-grid gap-2 mb-3">
                         <button class="btn btn-primary btn-lg">
-                            <i class="bi bi-cart3 me-2"></i>Acheter maintenant
+                            <i class="bi bi-cart3 me-2"></i>Купить сейчас
                         </button>
                         <button class="btn btn-outline-secondary">
-                            <i class="bi bi-heart me-2"></i>Ajouter aux favoris
+                            <i class="bi bi-heart me-2"></i>Добавить в избранное
                         </button>
                     </div>
 
                     <div class="text-center">
-                        <small class="text-muted">Garantie satisfait ou remboursé sous 30 jours</small>
+                        <small class="text-muted">Гарантия возврата денег в течение 30 дней</small>
                     </div>
                 </div>
             </div>
@@ -285,19 +279,16 @@ populaire.')
             <!-- Course Features -->
             <div class="card border-0 shadow-sm">
                 <div class="card-header bg-white">
-                    <h5 class="mb-0">Ce cours comprend</h5>
+                    <h5 class="mb-0">Этот курс включает</h5>
                 </div>
                 <div class="card-body">
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="bi bi-play-circle text-primary me-2"></i>12 heures de vidéo à la
-                            demande</li>
-                        <li class="mb-2"><i class="bi bi-file-text text-primary me-2"></i>56 ressources téléchargeables
-                        </li>
-                        <li class="mb-2"><i class="bi bi-infinity text-primary me-2"></i>Accès à vie</li>
-                        <li class="mb-2"><i class="bi bi-phone text-primary me-2"></i>Accès sur mobile et TV</li>
-                        <li class="mb-2"><i class="bi bi-trophy text-primary me-2"></i>Certificat de fin de formation
-                        </li>
-                        <li><i class="bi bi-arrow-repeat text-primary me-2"></i>Accès illimité après obtention</li>
+                        <li class="mb-2"><i class="bi bi-play-circle text-primary me-2"></i>12 часов видео по запросу</li>
+                        <li class="mb-2"><i class="bi bi-file-text text-primary me-2"></i>56 загружаемых ресурсов</li>
+                        <li class="mb-2"><i class="bi bi-infinity text-primary me-2"></i>Пожизненный доступ</li>
+                        <li class="mb-2"><i class="bi bi-phone text-primary me-2"></i>Доступ на мобильных устройствах и ТВ</li>
+                        <li class="mb-2"><i class="bi bi-trophy text-primary me-2"></i>Сертификат об окончании</li>
+                        <li><i class="bi bi-arrow-repeat text-primary me-2"></i>Неограниченный доступ после получения</li>
                     </ul>
                 </div>
             </div>
