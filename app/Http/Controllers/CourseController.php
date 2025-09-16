@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -31,7 +32,10 @@ class CourseController extends Controller
     {
         // Récupérer le cours depuis la base de données
         // Pour l'instant, on retourne une vue avec des données factices
-        return view('home.course-detail', ['courseId' => $id]);
+          // On récupère le cours depuis la DB
+        $course = Course::findOrFail($id);
+
+        return view('home.course-detail', ['courseId' => $id],compact('course'));
     }
 
     /**
